@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertEye - Fire Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo" alt="AlertEye Logo">
+            <h1>AlertEye - Fire Detection System</h1>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h3>Smart Fire Detection</h3>
+            <p>Protect your surroundings with intelligent fire detection.</p>
+            <button id="start-btn" class="btn">Start Detection</button>
+            <button id="stop-btn" class="btn">Stop Detection</button>
+        </div>
+    </section>
+
+    <!-- Video Stream Section -->
+    <section class="video-container">
+        <h2>Live Fire Detection</h2>
+        <div class="video-wrapper">
+            <img id="video-feed" src="" alt="Live Stream">
+            <div id="fire-alert" class="fire-alert">🔥 Fire Detected! 🔥</div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

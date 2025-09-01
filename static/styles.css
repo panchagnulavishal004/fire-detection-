@@ -1,0 +1,119 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: #0d0d0d;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Home Section */
+.home {
+  padding: 40px;
+  background: url("../images/bgimage.jpg") no-repeat center center/cover;
+  color: #000;
+}
+
+.home .content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.home h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#start-btn {
+  background: green;
+}
+
+#stop-btn {
+  background: red;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Video Container */
+.video-container {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.video-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#video-feed {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+
+/* Fire Alert */
+.fire-alert {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  animation: blink 1s infinite alternate;
+}
+
+/* Fire Alert Blinking Effect */
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.5; }
+}

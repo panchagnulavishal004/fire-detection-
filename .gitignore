@@ -143,6 +143,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.trail6venv/
 
 # Spyder project settings
 .spyderproject
@@ -205,3 +206,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Model Weights
+*.pt
+*.h5
+*.onnx
+*.pth
+
+# Datasets
+datasets/
+data/
+fireDetector/
+
+# YOLO runs
+runs/
+
+#requirements.txt
+requirements.txt
