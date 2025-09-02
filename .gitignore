@@ -229,3 +229,5 @@ runs/
 
 #requirements.txt
 requirements.txt
+
+node_modules/
